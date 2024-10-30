@@ -27,11 +27,11 @@ def main():
     parser.add_argument('--target-scale', default=1, type=float)
     parser.add_argument('--target-pred-type', default='v_prediction', choices=['epsilon', 'sample', 'v_prediction'])
     parser.add_argument('--self-attn-only', action='store_true')
-    parser.add_argument('--disable-prompts', action='store_true')
+    parser.add_argument('--disable-prompts', default=True, action='store_true')
     parser.add_argument('--use-oracle-ddim', action='store_true')
     parser.add_argument('--onepass', action='store_true')
     parser.add_argument('--seed', type=int, default=666666)
-    parser.add_argument('--num-workers', type=int, default=1)
+    parser.add_argument('--num-workers', type=int, default=0)
     args = parser.parse_args()
 
     if not args.src and not args.prompts:

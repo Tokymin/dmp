@@ -12,7 +12,7 @@ import torch
 from pipeline import Pipeline
 
 
-MODEL = 'CompVis/stable-diffusion-v1-4'
+MODEL = '/mnt/share/toky/LLMs/stable-diffusion-v1-4/'
 NORMAL_CKPT = 'ckpt/normal-scene100-notext'
 DEPTH_CKPT = 'ckpt/depth-hypersim-notext'
 
@@ -105,4 +105,4 @@ demo = gr.TabbedInterface(
     title='DMP Generalizable Dense Prediction',
 )
 demo.queue(max_size=20)
-demo.launch()
+demo.launch(share=True)

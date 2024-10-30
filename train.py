@@ -47,7 +47,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="DMP training script.")
     parser.add_argument(
         "--pretrained_model_name_or_path",
-        default="CompVis/stable-diffusion-v1-4",
+        default="/mnt/share/toky/LLMs/stable-diffusion-v1-4/",
         help="Path to pretrained model or model identifier from huggingface.co/models.",
     )
     parser.add_argument(

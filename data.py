@@ -172,7 +172,7 @@ class InferDataset(torch.utils.data.Dataset):
         sample['key'] = f'{i:05}'
         prompt = self.prompts[i%self.num_prompts]
         sample['text_ids'] = self.tokenizer(
-            prompt, padding='max_length', max_length=self.tokenizer.model_max_length,
+            prompt, padding='max_length', max_length=self.tokenizer.model_max_length,#
             truncation=True, return_tensors='pt').input_ids[0]
 
         if self.src_imgs is not None:
