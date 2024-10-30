@@ -12,7 +12,7 @@ import torch
 from pipeline import Pipeline
 
 
-MODEL = 'CompVis/stable-diffusion-v1-4'
+MODEL = 'J:/Projects/stable-diffusion-v1-4'
 NORMAL_CKPT = 'ckpt/normal-scene100-notext'
 DEPTH_CKPT = 'ckpt/depth-hypersim-notext'
 

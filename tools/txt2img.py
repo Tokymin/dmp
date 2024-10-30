@@ -20,7 +20,7 @@ def parse_args():
     parser.add_argument('--prompt')
     parser.add_argument('--from-file')
     parser.add_argument('--output', required=True)
-    parser.add_argument('--pretrained', default='CompVis/stable-diffusion-v1-4')
+    parser.add_argument('--pretrained', default='J:/Projects/stable-diffusion-v1-4')
     parser.add_argument('--height', type=int, default=512)
     parser.add_argument('--width', type=int, default=512)
     parser.add_argument('--num-inference-steps', type=int, default=50)

@@ -19,7 +19,7 @@ from utils import set_attn_processors, compute_snr
 class Pipeline:
 
     def __init__(self, 
-                 pretrained_model='CompVis/stable-diffusion-v1-4',
+                 pretrained_model=r'J:/Projects/stable-diffusion-v1-4',
                  self_attn_only=False,
                  disable_prompts=False,
                  onepass=False,
