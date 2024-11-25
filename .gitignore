@@ -7,6 +7,9 @@ ckpt
 output
 # C extensions
 *.so
+Saved_metrics_data
+Saved_depth_data
+Saved_visulaization
 test_Images
 # Distribution / packaging
 .Python

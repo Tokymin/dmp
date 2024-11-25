@@ -169,6 +169,8 @@ class InferDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, i):
         sample = {}
+        self.tokenizer.model_max_length = 77  # 手动将最大长度设为 512
+
         sample['key'] = f'{i:05}'
         prompt = self.prompts[i%self.num_prompts]
         sample['text_ids'] = self.tokenizer(
